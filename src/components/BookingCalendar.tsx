@@ -16,8 +16,8 @@ interface Booking {
   clientEmail: string;
 }
 
-// Créneaux de 10h à 2h du matin (16 créneaux d'1h)
-const TIME_SLOTS = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 0, 1];
+// Créneaux de 12h à 2h du matin (14 créneaux d'1h)
+const TIME_SLOTS = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 0, 1];
 
 export function BookingCalendar() {
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
@@ -247,7 +247,7 @@ export function BookingCalendar() {
                   : "Sélectionnez une date"}
               </CardTitle>
               <CardDescription className="text-gray-400">
-                Réservations disponibles de 10h à 2h du matin. À partir de 2h, le système de traitement et filtration se met en route pour le nettoyage de l'eau.
+                Réservations disponibles de 12h à 2h du matin. À partir de 2h, le système de traitement et filtration se met en route pour le nettoyage de l'eau.
                 <br />
                 <span className="text-[#c9a66b]">Cliquez sur plusieurs créneaux pour une réservation multiple.</span>
               </CardDescription>
